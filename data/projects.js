@@ -27,5 +27,20 @@ projects = [
 		"links" : ["http://www.expasy.org/glycomics", "http://www.sib.swiss/lisacek-frederique/","https://github.com/alodavide/sugarBuilder","http://glycopedia.eu/"],
 		"skills" : ["creativity", "design", "javascript", "D3js", "Google Polymer"],
 		"markdown": "sugarbuilder.md"
+	},
+	{
+		"name": "StopHIVInf",
+		"desc" : "Design a web tool to predict protective antibody levels against HIV infection",
+		"issues" : [
+			"https://github.com/cmagnus/StopHIVInf"
+		],
+		"mentors" : [
+			"magnuscar"
+		],
+		"keywords" : ["HIV", "antibodies", "neutralisation", "javascript", "web-interface", "prediction tool"],
+		"links" : ["https://github.com/magnuscar/StopHIVInf"],
+		"skills" : ["C", "R", "javascript", "webdesign", "html","css","wordpress"],
+		"markdown": "StopHIVInf.md"
 	}
+
 ]
