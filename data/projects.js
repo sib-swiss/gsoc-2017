@@ -44,7 +44,7 @@ projects = [
 	},
         {
 		"name" : "Drag-and-drop creation of data analysis workflows",
-		"desc" : "A Django-REST/Angular web application for drag-and-drop creation of data CWL-based processing/analysis workflows",
+		"desc" : "A web application for drag-and-drop creation of data processing and analysis workflows",
 		"issues" : [
 		    "https://git.scicore.unibas.ch/zavolan_public/CWL-workflow-creator/issues"
 		],
