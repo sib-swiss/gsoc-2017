@@ -1,3 +1,11 @@
+# SIB's Application for Google Summer of Code 2017
+
+The following page presents SIB's application for Google Summer of Code. It's based on https://github.com/coala/projects.git
+
+The rest of this README is directly from COALA:
+
+
+ 
 # Projects
 
 A website that showcases projects! **If you want to use it and it's not exactly
