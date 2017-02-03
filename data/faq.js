@@ -1,6 +1,6 @@
 faq = {
 
-"I want to do a GSoC!" : "i_want_to_do_a_gsoc.md",
+"What are SIB and bioinformatics?" : "sib.md",
 
 "What are the requirements to be accepted for GSoC?" : "gsoc_requirements.md",
 
