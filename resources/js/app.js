@@ -36,7 +36,7 @@
 	app.directive('projects',  ['$http',  '$timeout', '$location', function ($http, $timeout, $location) {
 		return {
 			restrict: 'E',
-			templateUrl: '/partials/tabs/projects.html',
+			templateUrl: 'partials/tabs/projects.html',
 			controller: function ($scope, $location) {
 				self = this
 				$scope.projectList = projects
@@ -137,7 +137,7 @@
 	app.directive('faq',[ '$http', function ($http) {
 		return {
 			restrict: 'E',
-			templateUrl: '/partials/tabs/faq.html',
+			templateUrl: 'partials/tabs/faq.html',
 			controller: function () {
 				self = this
 				self.faqs = faq
@@ -158,7 +158,7 @@
 	app.directive('mentors', ['$http', function ($http) {
 		return {
 			restrict: 'E',
-			templateUrl: '/partials/tabs/mentors.html',
+			templateUrl: 'partials/tabs/mentors.html',
 			controller: function ($scope) {
 				self = this
 				self.mentorsList = {}
