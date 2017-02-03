@@ -1,0 +1,1 @@
+Other than the [requirements from Google](https://developers.google.com/open-source/gsoc/faq#what_are_the_eligibility_requirements_for_participation) you should demonstrate an interest for [bioinformatics](http://www.sib.swiss/about-us/what-is-bioinformatics) and [research](http://www.sib.swiss/research).

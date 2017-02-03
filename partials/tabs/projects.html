@@ -1,46 +1,54 @@
-<section>
-
+<section id="projectCtrl">
   <div class="row footer-coala-row">
     <div class="col-md-6 col-md-offset-3 center">
-      <h4>Project proposals for <a target="_blank" href="https://summerofcode.withgoogle.com/">Google Summer of Code 2017</a></h4>
-      <p>SIB proposes various summer projects to be done within the program "Google Summer of Code". We're currently applying to be an organisational member.
-        As soon as we have a positive response from Google <a target="_blank" href="https://summerofcode.withgoogle.com/how-it-works/#timeline"> February 27, 2017 </a> we can start projects.
-        For now, that page serve as overview of SIB's application incl. a list of proposed open source projects.
+      <h4>Project proposals for<h4><h5><a target="_blank" href="https://summerofcode.withgoogle.com/">Google Summer of Code 2017</a></h5><br>
+      <p>The <a href="http://www.sib.swiss">SIB Swiss Institute of Bioinformatics</a> proposes various summer projects to be done within the program "Google Summer of Code". We're currently applying to be an organizational member.
+        As soon as we have a positive response from Google (planned for <a target="_blank" href="https://summerofcode.withgoogle.com/how-it-works/#timeline"> February 27, 2017</a>) we can start projects.
+        For now, that page serves as overview of SIB's application including a list of proposed open source projects.</p>
+        <p>All projects below are in the domain of bioinformatics and life sciences. Learn more about SIB and bioinformatics in <a href="#/faq">FAQ</a>.</p>
     </div>
   </div>
 
   <div class="main-content container">
 
-
+<!--
     <div class="col-md-8 col-md-offset-2">
       <div class="input-field col-md-10">
         <input ng-model="searchText" placeholder="Search for a project" id="search" type="text" class="validate">
       </div>
       <div class="input-field col-md-2">
-        <center>
-          <div><a class="explore waves-effect waves-light btn">Explore</a>
-          </div>
-        </center>
+        <a class="explore waves-effect waves-light btn">Explore</a>
       </div>
     </div>
+  -->
   </div>
-  <section>
+  <section tabindex="1">
     <div class="container">
       <div class="row showcase">
         <div ng-repeat="project in projectList | filter: searchText" class="card card-main showcase-card">
           <div class="project-card-detail waves-effect" ng-click="lc.showProject(project)">
             <div class="card-title name-bear">{{ project.name }}</div>
-            <div btf-markdown="project.desc | format_desc" class="card-content markdown"></div>
+            <div btf-markdown="project.desc" class="card-content markdown"></div>
           </div>
-          <div class="card-action">
-            <span ng-repeat="mentor in project.mentors | limitTo:4"><a ng-href="https://github.com/{{mentor}}" class="mentors-github-id" >{{mentor}}</a></span>
+          <div ng-show="project.mentors.length>0" class="card-action">
+            <span ng-repeat="mentor in project.mentors | limitTo:4"><a ng-href="https://github.com/{{mentor}}" class="mentors-github-id" target="_blank">{{mentor}}</a></span>
           </div>
+
+
+        <div ng-show="project.initiatives.length>0" class="project-overview-element clickable card-action">
+          <span ng-click="search(initiative)" class="pr-element-detail chip" ng-repeat="initiative in project.initiatives">{{ initiative }}</span><br>
+        </div>
+
+         <div ng-show="project.collaborating_projects.length>0" class="project-overview-element clickable card-action">
+          <span ng-click="search(project)" class="pr-element-detail chip" ng-repeat="project in project.collaborating_projects">{{ project }}</span><br>
+        </div>
+
         </div>
       </div>
     </div>
   </section>
 
-  <div id="modal1" class="modal">
+  <div ng-keydown="arrowPressed($event)"  id="modal1" class="modal" tabindex="0">
     <div  class="modal-content-bear">
       <div class="col-md-4 profile">
         <div class="project-name">
@@ -71,6 +79,7 @@
           <span class="pr-element-detail chip" ng-repeat="mentor in currentProject.mentors">@{{mentor}}</span>
         </div>
         <br>
+
       </div>
 
       <div ng-if="currentProject.markdown" class="col-md-8 dashboard">
@@ -79,13 +88,20 @@
       </div>
 
       </div>
+
  </div>
+<div ng-show="currentProject" class="arrows">
+  <div class="row">
+    <div class="col-md-6 center col s6"><i ng-click="moveToNext('left')" class="fa fa-arrow-circle-left arrow-click" aria-hidden="true"></i>
+    </div>
+    <div class="col-md-6 center col s6"><i ng-click="moveToNext('right')" class="fa fa-arrow-circle-right arrow-click" aria-hidden="true"></i>
+    </div>
+  </div>
+</div>
 </section>
 
 <script type="text/javascript">
   $(document).ready(function () {
-
-
 
     $('.explore').click(function () {
       $('html,body').animate({
@@ -101,10 +117,12 @@
       starting_top: '10%', // Starting top style attribute
       ending_top: '10%', // Ending top style attribute
       ready: function(modal, trigger) { // Callback for Modal open. Modal and trigger parameters available.
-
-        console.log(modal, trigger);
+        $(this).focus();
       },
-      complete: function() {  } // Callback for Modal close
+      complete: function() {
+      angular.element('#projectCtrl').scope().updateLink();
+      angular.element('#projectCtrl').scope().$apply();
+     } // Callback for Modal close
     }
     );
   })
