@@ -79,11 +79,6 @@
         </div>
         <br>
 
-        <div ng-show="currentProject.issues.length>0" class="project-detail-element">
-          <div class="small-heading">Related Issues</div>
-          <span ng-click="redirect(issue)" class="pr-element-detail chip clickable" ng-repeat="issue in currentProject.issues">{{ issue | format_issue }}</span>
-        </div>
-        <br>
       </div>
 
       <div ng-if="currentProject.markdown" class="col-md-8 dashboard">
