@@ -87,5 +87,21 @@ projects = [
 		"links" : ["http://omabrowser.org/oma/home/", "http://bokeh.pydata.org/en/latest/index.html"],
 		"skills" : ["python", "javascript", "web-interface", "design", "git"],
 		"markdown": "syntenydotplot.md"
+	},
+	{
+		"name" : "Reusable Web Components and Integration in neXtProt",
+		"desc" : "Development of web components related to Bioinformatics",
+		"issues" : [
+			""
+		],
+		"mentors" : [
+			"ddtxra",
+			"pamichel"
+		],
+		"keywords" : ["polymer", "web-components", "neXtProt", "BioJS", "angularjs"],
+		"links" : ["https://www.nextprot.org/", "https://github.com/calipho-sib/nextprot-webcomponents", "https://biojs.net/", "https://www.polymer-project.org/1.0/"],
+		"skills" : ["javascript", "html", "git"],
+		"markdown": "polymer.md"
 	}
+
 ]
