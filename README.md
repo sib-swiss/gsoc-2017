@@ -2,7 +2,7 @@
 
 The following page presents SIB's application for Google Summer of Code. It's based on https://github.com/coala/projects.git
 
-The rests of this README is directly from COALA:
+The rest of this README is directly from COALA:
 
 
  
