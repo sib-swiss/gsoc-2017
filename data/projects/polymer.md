@@ -1,6 +1,6 @@
 ##### Rationale
 
-Web development has been very exciting these last few years and new javascript technology have been popping up every day.
+Web development has been very exciting during the past few years and new javascript technology has been popping almost every week.
 
 With desktops being more and more powerful, the common development strategy has been to enrich client applications to enhance the user experience.
 
