@@ -1,5 +1,4 @@
-<section>
-
+<section id="projectCtrl">
   <div class="row footer-coala-row">
     <div class="col-md-6 col-md-offset-3 center">
       <h4>Project proposals for <a target="_blank" href="https://summerofcode.withgoogle.com/">Google Summer of Code 2017</a></h4>
@@ -11,39 +10,44 @@
 
   <div class="main-content container">
 
-
+<!--
     <div class="col-md-8 col-md-offset-2">
-      <!--
       <div class="input-field col-md-10">
         <input ng-model="searchText" placeholder="Search for a project" id="search" type="text" class="validate">
       </div>
       <div class="input-field col-md-2">
-        <center>
-          <div><a class="explore waves-effect waves-light btn">Explore</a>
-          </div>
-        </center>
+        <a class="explore waves-effect waves-light btn">Explore</a>
       </div>
     </div>
-    -->
-
+  -->
   </div>
-  <section>
+  <section tabindex="1">
     <div class="container">
       <div class="row showcase">
-        <div ng-repeat="project in projectList" class="card card-main showcase-card">
+        <div ng-repeat="project in projectList | filter: searchText" class="card card-main showcase-card">
           <div class="project-card-detail waves-effect" ng-click="lc.showProject(project)">
             <div class="card-title name-bear">{{ project.name }}</div>
-            <div btf-markdown="project.desc | format_desc" class="card-content markdown"></div>
+            <div btf-markdown="project.desc" class="card-content markdown"></div>
           </div>
-          <div class="card-action">
-            <span ng-repeat="mentor in project.mentors | limitTo:4"><a ng-href="https://github.com/{{mentor}}" class="mentors-github-id" >{{mentor}}</a></span>
+          <div ng-show="project.mentors.length>0" class="card-action">
+            <span ng-repeat="mentor in project.mentors | limitTo:4"><a ng-href="https://github.com/{{mentor}}" class="mentors-github-id" target="_blank">{{mentor}}</a></span>
           </div>
+
+
+        <div ng-show="project.initiatives.length>0" class="project-overview-element clickable card-action">
+          <span ng-click="search(initiative)" class="pr-element-detail chip" ng-repeat="initiative in project.initiatives">{{ initiative }}</span><br>
+        </div>
+
+         <div ng-show="project.collaborating_projects.length>0" class="project-overview-element clickable card-action">
+          <span ng-click="search(project)" class="pr-element-detail chip" ng-repeat="project in project.collaborating_projects">{{ project }}</span><br>
+        </div>
+
         </div>
       </div>
     </div>
   </section>
 
-  <div id="modal1" class="modal">
+  <div ng-keydown="arrowPressed($event)"  id="modal1" class="modal" tabindex="0">
     <div  class="modal-content-bear">
       <div class="col-md-4 profile">
         <div class="project-name">
@@ -74,21 +78,34 @@
           <span class="pr-element-detail chip" ng-repeat="mentor in currentProject.mentors">@{{mentor}}</span>
         </div>
         <br>
+
+        <div ng-show="currentProject.issues.length>0" class="project-detail-element">
+          <div class="small-heading">Related Issues</div>
+          <span ng-click="redirect(issue)" class="pr-element-detail chip clickable" ng-repeat="issue in currentProject.issues">{{ issue | format_issue }}</span>
+        </div>
+        <br>
       </div>
 
-      <div ng-if="currentProject.markdown" class="col-md-8 dashboard">
+      <div class="col-md-8 dashboard">
         <div btf-markdown ng-include="'data/projects/' + currentProject.markdown" class="project-description markdown">
         </div>
       </div>
 
       </div>
+
  </div>
+<div ng-show="currentProject" class="arrows">
+  <div class="row">
+    <div class="col-md-6 center col s6"><i ng-click="moveToNext('left')" class="fa fa-arrow-circle-left arrow-click" aria-hidden="true"></i>
+    </div>
+    <div class="col-md-6 center col s6"><i ng-click="moveToNext('right')" class="fa fa-arrow-circle-right arrow-click" aria-hidden="true"></i>
+    </div>
+  </div>
+</div>
 </section>
 
 <script type="text/javascript">
   $(document).ready(function () {
-
-
 
     $('.explore').click(function () {
       $('html,body').animate({
@@ -104,10 +121,12 @@
       starting_top: '10%', // Starting top style attribute
       ending_top: '10%', // Ending top style attribute
       ready: function(modal, trigger) { // Callback for Modal open. Modal and trigger parameters available.
-
-        console.log(modal, trigger);
+        $(this).focus();
       },
-      complete: function() {  } // Callback for Modal close
+      complete: function() {
+      angular.element('#projectCtrl').scope().updateLink();
+      angular.element('#projectCtrl').scope().$apply();
+     } // Callback for Modal close
     }
     );
   })
