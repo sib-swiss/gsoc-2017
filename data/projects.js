@@ -71,5 +71,21 @@ projects = [
 		"links" : ["https://git.scicore.unibas.ch/zavolan_public/HTSinfer"],
 		"skills" : ["C", "parallel programming", "Git"],
 		"markdown": "HTSinfer.md"
-	    }
+	    },
+	{
+		"name" : "OMA Synteny Dot Plot",
+		"desc" : "Development of an interactive web tool for synteny visualization",
+		"issues" : [
+			""
+		],
+		"mentors" : [
+			"cdessimoz",
+			"natashaglover",
+			"alpae"
+		],
+		"keywords" : ["synteny", "web-interface", "python", "OMA", "homology"],
+		"links" : ["http://omabrowser.org/oma/home/", "http://bokeh.pydata.org/en/latest/index.html"],
+		"skills" : ["python", "javascript", "web-interface", "design", "git"],
+		"markdown": "syntenydotplot.md"
+	}
 ]
