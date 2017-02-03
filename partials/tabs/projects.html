@@ -13,6 +13,7 @@
 
 
     <div class="col-md-8 col-md-offset-2">
+      <!--
       <div class="input-field col-md-10">
         <input ng-model="searchText" placeholder="Search for a project" id="search" type="text" class="validate">
       </div>
@@ -23,11 +24,13 @@
         </center>
       </div>
     </div>
+    -->
+
   </div>
   <section>
     <div class="container">
       <div class="row showcase">
-        <div ng-repeat="project in projectList | filter: searchText" class="card card-main showcase-card">
+        <div ng-repeat="project in projectList" class="card card-main showcase-card">
           <div class="project-card-detail waves-effect" ng-click="lc.showProject(project)">
             <div class="card-title name-bear">{{ project.name }}</div>
             <div btf-markdown="project.desc | format_desc" class="card-content markdown"></div>
