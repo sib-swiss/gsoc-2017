@@ -21,7 +21,7 @@ Multiple web components can be developed in the scope of the Google Summer of Co
 ##### Challenges
 
 -	Organizing and testing a maintainable code
--	Integration of web components in [www.nextprot.org](www.nextprot.org) website with AngularJS
+-	Integration of web components in [www.nextprot.org](https://www.nextprot.org) website with AngularJS
 -	Publish to [BioJS](https://biojs.net/) and [Web Components](https://www.webcomponents.org/)
 
 ##### Requirements
