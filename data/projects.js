@@ -42,7 +42,7 @@ projects = [
 		"skills" : ["C", "R", "javascript", "webdesign", "html","css","wordpress"],
 		"markdown": "StopHIVInf.md"
 	},
-        {
+  {
 		"name" : "Drag-and-drop creation of data analysis workflows",
 		"desc" : "Build a web application for drag-and-drop creation of data processing and analysis workflows",
 		"issues" : [
@@ -72,6 +72,20 @@ projects = [
 		"skills" : ["C", "parallel programming", "Git"],
 		"markdown": "HTSinfer.md"
 	    },
+	{
+		"name" : "arrayMap2GA4GH",
+		"desc" : "Web and API integration of Global Alliance for Genomics and Health (GA4GH) implementation project",
+		"issues" : [
+			"https://github.com/baudisgroup/arraymap2ga4gh/issues"
+		],
+		"mentors" : [
+			"KyleGao","mbaudis"
+		],
+		"keywords" : ["MongoDB", "arrayMap", "GA4GH", "cancer", "genomics", "web-interface", "metadata", "API"],
+		"links" : ["http://arraymap.org", "http://www.sib.swiss/baudis-michael","http://wiki.progenetix.org","http://github.com/ga4gh/schemas/"],
+		"skills" : ["git", "html", "javascript", "D3js", "responsive web design"],
+		"markdown": "arraymap2GA4GH.md"
+	},
 	{
 		"name" : "OMA Synteny Dot Plot",
 		"desc" : "Create an interactive web tool for synteny visualization",
