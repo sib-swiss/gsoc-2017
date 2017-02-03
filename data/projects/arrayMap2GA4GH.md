@@ -1,4 +1,4 @@
-### arrayMap2GA4GH - A web interface and API implementation for the arrayMap GA4GH development implementation
+##### arrayMap2GA4GH - A web interface and API implementation for the arrayMap GA4GH development implementation
 
 The [Global Alliance for Genomics and Health](http://genomicsandhealth.org) aims at promoting the efficiant use of distributed genomics data resources, through the development of data standard and APIs, as well as the support of legal, ethical and security frameworks for the use of human "omics" and associated metadata.
 
