@@ -84,7 +84,7 @@ projects = [
 		"keywords" : ["MongoDB", "arrayMap", "GA4GH", "cancer", "genomics", "web-interface", "metadata", "API"],
 		"links" : ["http://arraymap.org", "http://www.sib.swiss/baudis-michael","http://wiki.progenetix.org","http://github.com/ga4gh/schemas/"],
 		"skills" : ["git", "html", "javascript", "D3js", "responsive web design"],
-		"markdown": "arraymap2GA4GH.md"
+		"markdown": "arrayMap2GA4GH.md"
 	},
 	{
 		"name" : "OMA Synteny Dot Plot",
