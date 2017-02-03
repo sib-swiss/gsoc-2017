@@ -7,7 +7,7 @@ Synteny is the conservation of gene order between chromosomes that descended fro
 The [OMA (Orthologous Matrix) database](http://omabrowser.org/) is a leading bioinformatic resource of evolutionary relationships between genomes. The goal of this project is to use the pairwise orthologs predicted by OMA to create an interactive dot plot to display synteny between chromosomes. This web tool will be incorporated into OMA’s web browser, and will have a variety of features by which the user can customize their analyses. Several thousand researchers access the OMA resource every month, so new features can make a considerable impact.
 
 
-![DotPlot](data/projects/images/syntenydotplot.png)
+![DotPlot](resources/images/syntenydotplot.png)
 
 
 ##### Approach
