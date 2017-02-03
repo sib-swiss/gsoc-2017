@@ -1,10 +1,10 @@
 (function(){
 	var app = angular.module('coala', ['ngSanitize','btford.markdown', 'ngRoute']);
-
+	/*
 	app.config(['$locationProvider',
 		function($locationProvider) {
 			$locationProvider.html5Mode(true);
-	}]);
+	}]);*/
 
 	app.config(['$routeProvider',
 		function($routeProvider) {
