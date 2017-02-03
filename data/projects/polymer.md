@@ -6,7 +6,7 @@ With desktops being more and more powerful, the common development strategy has 
 
 [neXtProt](https://www.nextprot.org) embraces this trend using popular client side technology such as [AngularJS](https://angularjs.org/) and [Web Components](https://www.webcomponents.org/) / [Polymer](https://www.polymer-project.org/1.0/) (library developed by Google).
 
-Web components enable the re-use of such components by the bioinformatic community. This follows the strategy of the neXtProt development team that has published many libraries already in [BioJS](https://biojs.net/). The most popular one, being the [feature viewer](https://github.com/calipho-sib/feature-viewer) shown in this picture.
+Web components enable the re-use of such libaries by the bioinformatics community. This follows the strategy of the neXtProt development team that has published many libraries already in [BioJS](https://biojs.net/). The most popular one, being the [feature viewer](https://github.com/calipho-sib/feature-viewer) shown in this picture.
 
 ![DotPlot](data/projects/images/feature-viewer.png)
 
