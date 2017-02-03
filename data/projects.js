@@ -1,7 +1,7 @@
 projects = [
 	{
 		"name" : "Cellosaurus Web-Tool and Wikidata bot",
-		"desc" : "The students should develop a web tool to compare STR Marker profile for a cell line and a Wikidata bot",
+		"desc" : "Develop a web tool to compare marker profiles for a cell line and a Wikidata bot",
 		"issues" : [
 			"https://github.com/calipho-sib/cellosaurus/issues"
 		],
@@ -44,7 +44,7 @@ projects = [
 	},
         {
 		"name" : "Drag-and-drop creation of data analysis workflows",
-		"desc" : "A web application for drag-and-drop creation of data processing and analysis workflows",
+		"desc" : "Build a web application for drag-and-drop creation of data processing and analysis workflows",
 		"issues" : [
 		    "https://git.scicore.unibas.ch/zavolan_public/CWL-workflow-creator/issues"
 		],
@@ -59,7 +59,7 @@ projects = [
 	    },
 	    {
 		"name" : "HTSinfer",
-		"desc" : "Computational tool to infer meta-data from High Throughput Sequencing (HTS) data",
+		"desc" : "Develop a computational tool to infer meta-data from High Throughput Sequencing data",
 		"issues" : [
 		    "https://git.scicore.unibas.ch/zavolan_public/HTSinfer/issues"
 		],
@@ -74,7 +74,7 @@ projects = [
 	    },
 	{
 		"name" : "OMA Synteny Dot Plot",
-		"desc" : "Development of an interactive web tool for synteny visualization",
+		"desc" : "Create an interactive web tool for synteny visualization",
 		"issues" : [
 			""
 		],
@@ -90,7 +90,7 @@ projects = [
 	},
 	{
 		"name" : "Reusable Web Components and Integration in neXtProt",
-		"desc" : "Development of web components related to Bioinformatics",
+		"desc" : "Develop web components related to Bioinformatics",
 		"issues" : [
 			""
 		],
