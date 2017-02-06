@@ -8,7 +8,7 @@ The [OMA (Orthologous Matrix) database](http://omabrowser.org/) is a leading bio
 
 ##### Approach
 
-A prototype for the interactive synteny dot plot has already been made, but will be developed further by the summer intern. For this s/he will use Bokeh, a python visualization library, to create an interactive synteny visualizer to be implemented the OMA browser. The intern will retrieve the data from an HDF5 database and implement features including:
+A prototype for the interactive synteny dot plot has already been made, but will be developed further by the summer intern. For this s/he will use Bokeh, a Python visualization library, to create an interactive synteny visualizer to be implemented the OMA browser. The candidate will retrieve the data from an HDF5 database and implement features including:
 
 -	Display orthologs from either a pair of chromosomes or genomes
 -	Filter orthologs based on a variety of metrics, including substitution rate, evolutionary distance, relationship cardinality, synteny and score
@@ -21,4 +21,4 @@ Javascript may be needed for customization beyond what is available with the bok
 
 ##### Requirements
 
-The intern should have moderate to advanced knowledge in python, and javascript is a plus. Web design and development skills are needed. Creativity for new features and ways to visualize the data available in are also a plus.
+The intern should have moderate to advanced knowledge in Python, and JavaScript is a plus. Web design and development skills are needed. Creativity for new features and ways to visualize the data available are also a plus.
