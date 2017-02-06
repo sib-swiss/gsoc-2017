@@ -48,6 +48,8 @@ the app should cover the following basic functionality:
   components that are compatible with the currently selected one, are realized by implementing CWL 
   specifications.
 
+![CWL workflow creator prototype](data/projects/images/cwl-workflow-creater_canvas.png)
+
 ##### Challenges
 Implementing a reactive, performant and user-friendly stand-alone web application requires 
 creativity, as well as rigor with regard to planning and coding. A clean and well documented code 
