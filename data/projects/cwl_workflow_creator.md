@@ -32,7 +32,9 @@ stack:
 - [Django REST framework](http://www.django-rest-framework.org/) (back-end)
 - [Latest Angular](https://angular.io/) (front-end/GUI) 
 
+
 ![CWL workflow tool stack](data/projects/images/cwl-workflow-creator_tool_stack_x96.png)
+
 
 ##### Approach
 
