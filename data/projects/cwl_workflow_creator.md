@@ -31,15 +31,11 @@ stack:
 - [Django REST framework](http://www.django-rest-framework.org/) (back-end)
 - [Latest Angular](https://angular.io/) (front-end/GUI) 
 
-In particular, a minimal Django app will handle the data models necessary to store and retrieve CWL 
-components and save, retrieve and modify the generated CWL workflows. Data models will be serialized 
-with the help of the Django REST framework and endpoints defined for a RESTful API. The Angular 
-front-end will retrieve components (GET), as well as create (POST), retrieve (GET), modify (UPDATE) 
-and visualize workflows (as a network graph on a canvas).
+![CWL workflow tool stack](data/projects/images/cwl-workflow-creator_tool_stack_x96.png)
 
-Further details of the Angular implementation will be decided upon together with the student (any 
-input is very welcome!), with user experience and performance being the main objectives. However, 
-the app should cover the following basic functionality:
+In particular, a minimal Django app will handle the data models necessary to store and retrieve CWL components and save, retrieve and modify the generated CWL workflows. Data models will be serialized with the help of the Django REST framework and endpoints defined for a RESTful API. The Angular front-end will retrieve components, as well as create, retrieve, modify and visualize workflows (as a network graph on a canvas). Further details of the Angular implementation will be decided upon together with the student (any input is very welcome!), with user experience and performance being the main objectives. 
+
+Roughly, the app should cover the following basic functionality:
 
 - Components can be arranged and re-arranged freely on the canvas via _drag-and-drop_.
 - In an overlaid component-based view, default parameters for options, input and output can be 
@@ -49,8 +45,6 @@ the app should cover the following basic functionality:
 - Context dependent features, such as handling option dependencies and selectively listing 
   components that are compatible with the currently selected one, are realized by implementing CWL 
   specifications.
-
-![CWL workflow tool stack](data/projects/images/cwl-workflow-creator_tool_stack_x96.png)
 
 ##### Challenges
 Implementing a reactive, performant and user-friendly stand-alone web application requires 
