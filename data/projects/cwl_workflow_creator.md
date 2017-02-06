@@ -50,7 +50,7 @@ the app should cover the following basic functionality:
   components that are compatible with the currently selected one, are realized by implementing CWL 
   specifications.
 
-![CWL workflow tool stack](data/projects/images/cwl-workflow-tool_stack.png)
+![CWL workflow tool stack](data/projects/images/cwl-workflow-creator_tool_stack_x192.png)
 
 ##### Challenges
 Implementing a reactive, performant and user-friendly stand-alone web application requires 
