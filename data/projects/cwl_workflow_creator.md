@@ -24,9 +24,9 @@ open-source specification for the implementation of component-based workflows, r
 As the application is supposed to seamlessly integrate with a web-based bioinformatics data analysis 
 service currently under development, the application is to be implemented with the following tool 
 stack:
-* Django: <https://www.djangoproject.com/>
-* Django REST framework (back-end): <http://www.django-rest-framework.org/>
-* Latest Angular (front-end/GUI): <https://angular.io/>
+- Django: <https://www.djangoproject.com/>
+- Django REST framework (back-end): <http://www.django-rest-framework.org/>
+- Latest Angular (front-end/GUI): <https://angular.io/>
 
 In particular, a minimal Django app will handle the data models necessary to store and retrieve CWL 
 components and save, retrieve and modify the generated CWL workflows. Data models will be serialized 
@@ -37,12 +37,12 @@ and visualize workflows (as a network graph on a canvas).
 Further details of the Angular implementation will be decided upon together with the student (any 
 input is very welcome!), with user experience and performance being the main objectives. However, 
 the app should cover the following basic functionality:
-* Components can be arranged and re-arranged freely on the canvas via _drag-and-drop_.
-* In an overlaid component-based view, default parameters for options, input and output can be 
+- Components can be arranged and re-arranged freely on the canvas via _drag-and-drop_.
+- In an overlaid component-based view, default parameters for options, input and output can be 
   set/changed, and relevant information (e.g. an option's help message) easily accessed (e.g. by 
   tooltips).
-* New components can be selected/dragged from a sidebar view listing available components.
-* Context dependent features, such as handling option dependencies and selectively listing 
+- New components can be selected/dragged from a sidebar view listing available components.
+- Context dependent features, such as handling option dependencies and selectively listing 
   components that are compatible with the currently selected one, are realized by implementing CWL 
   specifications.
 
@@ -53,11 +53,11 @@ base is critical to ensure adoption and longevity of the project.
 
 ##### Requirements
 The ideal student has
-* an interest in process automation and creative, user-friendly web design
-* experience with a JavaScript front-end framework (ideally Angular2+)
-* good working knowledge of Python (Django/REST is a plus)
-* basic experience with Git
-* read the CWL user guide: <http://www.commonwl.org/v1.0/UserGuide.html>
+- an interest in process automation and creative, user-friendly web design
+- experience with a JavaScript front-end framework (ideally Angular2+)
+- good working knowledge of Python (Django/REST is a plus)
+- basic experience with Git
+- read the CWL user guide: <http://www.commonwl.org/v1.0/UserGuide.html>
 
 However, a high level of motivation and an interest to learn about the listed techniques can 
 compensate for any lack of experience.
