@@ -49,8 +49,8 @@ projects = [
 		    "https://git.scicore.unibas.ch/zavolan_public/CWL-workflow-creator/issues"
 		],
 		"mentors" : [
-		    "kanitz",
-		    "gypas"
+		    "uniqueg",
+		    "fgypas"
 		],
 		"keywords" : ["CWL", "workflows", "JavaScript", "TypeScript", "Angular", "Django", "REST", "UX", "drag-and-drop"],
 		"links" : ["https://git.scicore.unibas.ch/zavolan_public/CWL-workflow-creator", "http://www.commonwl.org/", "https://github.com/common-workflow-language/common-workflow-language", "https://www.djangoproject.com/", "http://www.django-rest-framework.org/", "https://angular.io/"],
@@ -64,8 +64,8 @@ projects = [
 		    "https://git.scicore.unibas.ch/zavolan_public/HTSinfer/issues"
 		],
 		"mentors" : [
-		    "gypas",
-		    "kanitz"
+		    "fgypas",
+		    "uniqueg"
 		],
 		"keywords" : ["C", "parallel programming", "bioinformatics", "High Throughput Sequencing", "HTS"],
 		"links" : ["https://git.scicore.unibas.ch/zavolan_public/HTSinfer"],
