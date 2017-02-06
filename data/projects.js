@@ -11,7 +11,7 @@ projects = [
 		],
 		"keywords" : ["cell line", "ExPASy"],
 		"links" : ["http://web.expasy.org/cellosaurus/", "http://web.expasy.org/cellosaurus/description.html", "https://github.com/calipho-sib/cellosaurus", "https://github.com/calipho-sib/cellosaurus-syntax-checker"],
-		"skills" : ["scala", "python", "java", "rdf", "git"],
+		"skills" : ["Scala", "Python", "Java", "RDF", "Git"],
 		"markdown": "cellosaurus.md"
 	},
 	{
@@ -23,9 +23,9 @@ projects = [
 		"mentors" : [
 			"alodavide","julienmariethoz"
 		],
-		"keywords" : ["Glycomics", "ExPASy", "sugars", "carbohydrates", "javascript", "web-interface", "drawing tool"],
+		"keywords" : ["Glycomics", "ExPASy", "sugars", "carbohydrates", "", "web-interface", "drawing tool"],
 		"links" : ["http://www.expasy.org/glycomics", "http://www.sib.swiss/lisacek-frederique/","https://github.com/alodavide/sugarBuilder","http://glycopedia.eu/"],
-		"skills" : ["creativity", "design", "javascript", "D3js", "Google Polymer"],
+		"skills" : ["creativity", "design", "JavaScript", "D3js", "Google Polymer"],
 		"markdown": "sugarbuilder.md"
 	},
 	{
@@ -37,9 +37,9 @@ projects = [
 		"mentors" : [
 			"magnuscar"
 		],
-		"keywords" : ["HIV", "antibodies", "neutralisation", "javascript", "web-interface", "prediction tool"],
+		"keywords" : ["HIV", "antibodies", "neutralisation", "JavaScript", "web-interface", "prediction tool"],
 		"links" : ["https://github.com/magnuscar/StopHIVInf"],
-		"skills" : ["C", "R", "javascript", "webdesign", "html","css","wordpress"],
+		"skills" : ["C", "R", "JavaScript", "web design", "HTML","CSS","Wordpress"],
 		"markdown": "StopHIVInf.md"
 	},
   {
@@ -52,9 +52,9 @@ projects = [
 		    "uniqueg",
 		    "fgypas"
 		],
-		"keywords" : ["CWL", "workflows", "JavaScript", "TypeScript", "Angular", "Django", "REST", "UX", "drag-and-drop"],
+		"keywords" : ["CWL", "workflows", "JavaScript", "TypeScript", "AngularJS", "Django", "REST", "UX", "drag-and-drop"],
 		"links" : ["https://git.scicore.unibas.ch/zavolan_public/CWL-workflow-creator", "http://www.commonwl.org/", "https://github.com/common-workflow-language/common-workflow-language", "https://www.djangoproject.com/", "http://www.django-rest-framework.org/", "https://angular.io/"],
-		"skills" : ["TypeScript", "Angular", "Python", "Django", "REST", "Git", "Docker", "UX design"],
+		"skills" : ["TypeScript", "AngularJS", "Python", "Django", "REST", "Git", "Docker", "UX design"],
 		"markdown": "cwl_workflow_creator.md"
 	    },
 	    {
@@ -83,7 +83,7 @@ projects = [
 		],
 		"keywords" : ["MongoDB", "arrayMap", "GA4GH", "cancer", "genomics", "web-interface", "metadata", "API"],
 		"links" : ["http://arraymap.org", "http://www.sib.swiss/baudis-michael","http://wiki.progenetix.org","http://github.com/ga4gh/schemas/"],
-		"skills" : ["git", "html", "javascript", "D3js", "responsive web design"],
+		"skills" : ["Git", "HTML", "JavaScript", "D3js", "responsive web design"],
 		"markdown": "arrayMap2GA4GH.md"
 	},
 	{
@@ -97,9 +97,9 @@ projects = [
 			"natashaglover",
 			"alpae"
 		],
-		"keywords" : ["synteny", "web-interface", "python", "OMA", "homology"],
+		"keywords" : ["synteny", "web interface", "Python", "OMA", "homology"],
 		"links" : ["http://omabrowser.org/oma/home/", "http://bokeh.pydata.org/en/latest/index.html"],
-		"skills" : ["python", "javascript", "web-interface", "design", "git"],
+		"skills" : ["python", "JavaScript", "web-interface", "design", "Git"],
 		"markdown": "syntenydotplot.md"
 	},
 	{
@@ -112,9 +112,9 @@ projects = [
 			"ddtxra",
 			"pamichel"
 		],
-		"keywords" : ["polymer", "web-components", "neXtProt", "BioJS", "angularjs"],
+		"keywords" : ["Polymer", "web components", "neXtProt", "BioJS", "AngularJS"],
 		"links" : ["https://www.nextprot.org/", "https://github.com/calipho-sib/nextprot-webcomponents", "https://biojs.net/", "https://www.polymer-project.org/1.0/"],
-		"skills" : ["javascript", "html", "git"],
+		"skills" : ["JavaScript", "HTML", "Git"],
 		"markdown": "polymer.md"
 	}
 
