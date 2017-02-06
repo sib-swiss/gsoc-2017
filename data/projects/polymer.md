@@ -1,6 +1,6 @@
 ##### Rationale
 
-Web development has been very exciting during the past few years and new javascript technology has been popping almost every week.
+Web development has been very exciting during the past few years, and new JavaScript technology has been popping up almost every week.
 
 With desktops being more and more powerful, the common development strategy has been to enrich client applications to enhance the user experience.
 
@@ -12,7 +12,7 @@ Web components enable the re-use of such libaries by the bioinformatics communit
 
 ##### Approach
 
-Multiple web components can be developed in the scope of the Google Summer of Code 2017. The following examples, show visualizations that should be replaced by web components.
+Multiple web components can be developed in the scope of the Google Summer of Code 2017. The following examples show visualizations that should be replaced by web components:
 
 -	[Ancestor Graph](https://www.nextprot.org/term/TS-0079/parentGraph) (could be done in combination with [D3](https://d3js.org/)\)
 -	[Tree browser](https://www.nextprot.org/term/TS-0564/browser)
@@ -26,5 +26,5 @@ Multiple web components can be developed in the scope of the Google Summer of Co
 
 ##### Requirements
 
--	The student should have some knowledge of html and javascript.
+-	The student should have knowledge of HTML and JavaScript.
 -	Polymer, AngularJS and D3 are a plus.
