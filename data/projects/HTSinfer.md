@@ -12,11 +12,16 @@ is to develop a set of tools for automatic extraction of experimental parameters
 
 ##### Approach
 
-The student should develop a package that accepts HTS datasets and is able to automatically identify characteristics of the experiment such as 
+The student should develop a package that accepts HTS datasets and is able to automatically identify characteristics of the experiment such as
+
 - The organism from which the samples were derived
+
 - Type of captured molecule (RNA, DNA) 
+
 - How the samples were sequenced (single/paired end)
+
 - The orientation of the reads
+
 - Adaptor sequences that were used in the experiment
 
 ##### Challenges
@@ -27,9 +32,13 @@ methods that allow the timely processing of thousands of sequencing data sets.
 ##### Requirements
 
 The ideal student has:
+
 - Interest in bioinformatics
+
 - Strong programming skills: python, C or similar
+
 - Experience with parallel programming
+
 - Basic experience with Git
 
 ##### References
