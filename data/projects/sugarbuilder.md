@@ -1,11 +1,11 @@
 
 ##### Rationale
 
-Glycans are tree-like molecules, which decorate the surface of proteins. Also known as sugars or carbohydrates, they play a critical role in biological processes differentially so in healthy vs. pathological conditions. As such, they can potentially be used as diagnosis or prognosis biomarkers. Growing interest in this class of molecules prompts the need for an intuitive web interface where they can be easily drawn prior to querying bioinformatics resources.
+Glycans are tree-like molecules which decorate the surface of proteins. Also known as sugars or carbohydrates, they play a critical role in biological processes differentially so in healthy vs. pathological conditions. As such, they can potentially be used as diagnosis or prognosis biomarkers. Growing interest in this class of molecules prompts the need for an intuitive web interface where they can be easily drawn prior to querying bioinformatics resources.
 
 [![glycanDrawing.jpg](https://s23.postimg.org/9m89ckv1n/glycan_Drawing.jpg)](https://postimg.org/image/lbc90jm07/)
 
-A tool like GlycanBuilder already provides a solution, but it was designed for users with a fair knowledge of glycobiology. As such it lacks intuitiveness for naïve users and, more importantly, is hardly ever updated. In this context, we started the development of a new online framework called SugarBuider.
+A tool like GlycanBuilder already provides a solution, but it was designed for users with a fair knowledge of glycobiology. As such it lacks intuitiveness for naïve users and, more importantly, is hardly ever updated. In this context, we started the development of a new online framework called [SugarBuilder](https://github.com/alodavide/sugarBuilder).
 
 [![sugarbuilder.png](https://s29.postimg.org/bzwydr47r/sugarbuilder.png)](https://postimg.org/image/v507niivn/)
 
