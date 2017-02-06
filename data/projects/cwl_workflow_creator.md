@@ -16,7 +16,8 @@ to reusability, reproducibility, sharing and documentation at little to no cost.
 
 ![CWL workflow creator prototype](data/projects/images/cwl-workflow-creator_canvas.png)
 
-##### Approach
+##### Techniques
+
 The core of the application is the [Common Workflow 
 Language](https://github.com/common-workflow-language/common-workflow-language) (CWL), an 
 open-source specification for the implementation of component-based workflows, relying on 
@@ -33,7 +34,9 @@ stack:
 
 ![CWL workflow tool stack](data/projects/images/cwl-workflow-creator_tool_stack_x96.png)
 
-In particular, a minimal Django app will handle the data models necessary to store and retrieve CWL components and save, retrieve and modify the generated CWL workflows. Data models will be serialized with the help of the Django REST framework and endpoints defined for a RESTful API. The Angular front-end will retrieve components, as well as create, retrieve, modify and visualize workflows (as a network graph on a canvas). Further details of the Angular implementation will be decided upon together with the student (any input is very welcome!), with user experience and performance being the main objectives. 
+##### Approach
+
+A minimal Django app will handle the data models necessary to store and retrieve CWL components and save, retrieve and modify the generated CWL workflows. Data models will be serialized with the help of the Django REST framework and endpoints defined for a RESTful API. The Angular front-end will retrieve components, as well as create, retrieve, modify and visualize workflows (as a network graph on a canvas). Further details of the Angular implementation will be decided upon together with the student (any input is very welcome!), with user experience and performance being the main objectives. 
 
 Roughly, the app should cover the following basic functionality:
 
