@@ -27,7 +27,7 @@ stack:
 
 - [Django](https://www.djangoproject.com/)
 - [Django REST framework](http://www.django-rest-framework.org/) (back-end)
-- [Latest Angular](https://angular.io/) (front-end/GUI): 
+- [Latest Angular](https://angular.io/) (front-end/GUI) 
 
 In particular, a minimal Django app will handle the data models necessary to store and retrieve CWL 
 components and save, retrieve and modify the generated CWL workflows. Data models will be serialized 
