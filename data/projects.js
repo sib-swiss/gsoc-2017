@@ -60,7 +60,7 @@ projects = [
 	    },
 	    {
 		"name" : "HTSinfer",
-		"desc" : "Develop a computational tool to infer meta-data from High Throughput Sequencing data",
+		"desc" : "Develop a computational tool to infer metadata from High Throughput Sequencing data",
 		"issues" : [
 		    "https://git.scicore.unibas.ch/zavolan_public/HTSinfer/issues"
 		],
