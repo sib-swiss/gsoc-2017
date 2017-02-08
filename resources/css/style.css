@@ -237,6 +237,11 @@ a:hover > .card{
 .modal-content-bear{
   display: flex
 }
+
+.modal-content-bear img{
+  max-width: 100%
+}
+
 .project-name{
   font-size: 2em;
   text-align: center;
