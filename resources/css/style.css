@@ -345,7 +345,8 @@ a:hover > .card{
 .person-github-id{
   font-size: 1.2em;
   text-align: center;
-  padding: 0.5em;
+  padding: 0;
+  margin: 0 !important;
   text-transform: none !important;
   font-family: 'Roboto Mono', menlo, monospace;
 }
@@ -357,6 +358,8 @@ a:hover > .card{
 .person-github-id-div{
   padding: 1em;
   text-align: center !important;
+  padding-left: 0;
+  padding-right: 0;  
 }
 .github-link{
   bottom:0;
