@@ -42,7 +42,7 @@ projects = [
 		"skills" : ["C", "R", "JavaScript", "web design", "HTML","CSS","Wordpress"],
 		"markdown": "StopHIVInf.md"
 	},
-  {
+    {
 		"name" : "Drag-and-drop creation of data analysis workflows",
 		"desc" : "Build a web application for drag-and-drop creation of data processing and analysis workflows",
 		"issues" : [
@@ -58,6 +58,21 @@ projects = [
 		"skills" : ["TypeScript", "AngularJS", "Python", "Django", "REST", "Git", "Docker", "UX design"],
 		"markdown": "cwl_workflow_creator.md"
 	    },
+
+	{
+		"name" : "Speedy BioDiv",
+		"desc" : "Computationally efficient approaches to understanding biodiversity through time",
+		"issues" : [
+			"https://github.com/trayc7/FDPPDIV"
+		],
+		"mentors" : [
+			"rachelwarnock"
+		],
+		"keywords" : ["fossil record", "phylogenetics","phylodynamics","speciation","extinction"],
+		"links" : ["https://github.com/trayc7/FDPPDIV"],
+		"skills" : ["software development","C++", "code optimization"],
+		"markdown": "biodiv.md"
+	},
 	    {
 		"name" : "HTSinfer",
 		"desc" : "Develop a computational tool to infer metadata from High Throughput Sequencing data",
