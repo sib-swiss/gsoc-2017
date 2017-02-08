@@ -1,26 +1,22 @@
 (function(){
 	var app = angular.module('coala', ['ngSanitize','btford.markdown', 'ngRoute']);
-	/*
-	app.config(['$locationProvider',
-		function($locationProvider) {
-			$locationProvider.html5Mode(true);
-	}]);*/
 
 	app.config(['$routeProvider',
 		function($routeProvider) {
 			$routeProvider.
-			when('/', {
-				redirectTo: '/projects'
-			}).
 			when('/projects', {
-				template: '<projects></projects>'
+				template: '<projects></projects>',
+				reloadOnSearch: false
 			}).
 			when('/mentors', {
 				template: '<mentors></mentors>'
 			}).
 			when('/faq', {
 				template: '<faq></faq>'
-			})
+			}).
+			otherwise({
+				redirectTo: '/projects'
+            		});
 		}]);
 	app.controller('TabController', function ($location) {
 		this.tab = $location.path()
@@ -29,7 +25,7 @@
 			$location.path(stab);
 		}
 		this.isSet = function (stab) {
-			return this.tab == stab
+			return $location.path() == stab
 		}
 	})
 
@@ -41,7 +37,7 @@
 				self = this
 				$scope.projectList = projects
 				self.showProject = function (project) {
-
+					
 					$scope.currentProject = project
 
 					$(document).ready(function () {
@@ -54,9 +50,11 @@
 				}
 
 				self.showProjectOnArrowClick = function (project) {
-
+					
 					$scope.currentProject = project
 					mval = encodeURIComponent(project["name"].split(' ').join('_').toLowerCase());
+					$location.url('?project=' + mval)
+                    	                $scope.$evalAsync();
 				}
 
 				$scope.search = function (arg) {
@@ -68,19 +66,24 @@
 				}
 
 				$scope.updateLink = function () {
+					$scope.currentProject = null;
 					$location.url($location.path());
 				}
 
 				$scope.encode_URI = function (project_name) {
-					return encodeURIComponent(project_name.split(' ').join('_').toLowerCase());
+					return encodeURIComponent(project_name.split(' ').join('_').toLowerCase()); 
 				}
 
 				$scope.arrowPressed = function (e) {
 					if(e.keyCode == 37){
-						$scope.moveToNext("left");
-					} else if(e.keyCode == 39){
-						$scope.moveToNext("right");
+						keyPressed = "left"
+                        			$scope.moveToNext(keyPressed);
 					}
+					else if(e.keyCode == 39){
+						keyPressed = "right"
+                        			$scope.moveToNext(keyPressed);
+					}
+
 				}
 
 				$scope.moveToNext = function (keyPressed) {
@@ -106,7 +109,7 @@
 							}else{
 								self.showProjectOnArrowClick($scope.projectList[++current_project_index])
 							}
-						}
+						}					 
 					}
 				}
 
@@ -117,14 +120,14 @@
 					$scope.projects_url_dict[value["url"]] = key
 				});
 
-				var project_requested = encodeURIComponent($location.search().project);
+				var project_requested = encodeURIComponent($location.search().project); 
 				if(project_requested){
 					if(Object.keys($scope.projects_url_dict).indexOf(project_requested) > -1){
 						self.showProject($scope.projectList[$scope.projects_url_dict[project_requested]])
 					}
 				}
 
-				var search_requested = $location.search().q;
+				var search_requested = $location.search().q; 
 				if(search_requested){
 					$scope.searchText = search_requested
 				}
