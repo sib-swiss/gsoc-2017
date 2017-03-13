@@ -3,6 +3,8 @@
 The following page presents SIB's application for Google Summer of Code. 
 The code of this website was forked form https://github.com/coala/projects.git and adapted to SIB project ideas.
 
+**Update** Due to the high number of applications, SIB could not be accepted by Google in GSOC 2017.
+
 The rest of this README is directly from COALA:
 
 
